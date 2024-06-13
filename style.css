@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(238, 245, 245);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 0;
+}
+nav img{
+    width: 130PX;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 0 12px;
+    color: #333;
+    font-size: 18px;
+}
+nav .loginbtn{
+    position: relative;
+}
+nav .loginbtn img{
+    width: 120px;
+    height: 50px;
+}
+nav .loginbtn span{
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-size: 20px;
+    color: #333;
+}
+.itema:hover{
+    color: #b219db;
+}
+.itema:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5%;
+    background-color: #b219db;
+    bottom: -3px;
+    left: 0;
+    display: inline-block;
+    transition: 5s;
+}   
+.itema{
+    transition: 0.5s;
+}
+/* end nav */
+.firstdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.divtext{
+    padding-top: 180px;
+    width: 50%;
+}
+.divtext h3{
+    font-size: 55px;
+    color: #637279;
+    font-weight: 800;
+}
+.divtext h3 span{
+    color: #7a3d8a;
+}
+.divtext p{
+    font-size: 28px;
+    color: #afafaf;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.divimgs{
+    width: 50%;
+    position: relative;
+
+}
+.divimgs .background{
+    width: 100%;
+}
+.divimgs .man{
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 45%;
+}
+.divimgs .cloud{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 60%;
+}
+.waves{
+    position: absolute;
+    width: 90%;
+    top: 70%;
+    left: -18%;
+}
+.secbackground{
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    z-index: -999;
+
+}
+/* end first section */
+/* start second section */
+.secondsec{
+    position: relative;
+    text-align: center;
+    padding: 0px 100px;
+    height: 120vh;
+}
+.threedivs div{
+    width: 400px;
+}
+.threedivs div img{
+    width: 250px;
+}
+.threedivs div h3{
+    color: #999;
+    font-size: 25px;
+}
+.threedivs div p{
+    color: #b9b9b9;
+    font-size: 20px;
+}
+.threedivs .div1{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+.threedivs .div2{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+}
+.threedivs .div3{
+    position: absolute;
+    top: 65%;
+    right: 12%;
+}
+.sec2ground{
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    width: 60%;
+    height: 65%;
+}
+.div4{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+.div4all{
+    position: relative;
+}
+.div4all img{
+    width: 350px;
+}
+.div4all div{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+}
+.div4all div p{
+    color: white;
+    font-size: 25px;
+}
+.div4all div h3{
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+/* end second section */
+/* start third section */
+.thirdsec{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center ;
+}
+.maindiv{
+    padding: 0 30px;
+}
+.maindiv h3{
+    color: #999;
+    font-size: 25px;
+}
+.maindiv p{
+    color: #b9b9b9;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+/* end third section */
+/* start footer */
+footer{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+.bgfooter{
+    position: absolute;
+    width: 110%;
+    height: 150%;
+    left: -3%;
+    top: 0;
+}
+.people{
+    position: absolute;
+    width: 40vw;
+    right: 10%;
+    bottom: 0%;
+}
+footer .footerbtn{
+    position: relative;
+    width: 130px;
+    height: 50px;
+}
+footer .footertext{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+footer .footerbtn .btnimg{
+    width: 130px;
+    height: 50px;
+}
+footer .footerbtn div p{
+    font-size: 12px;
+    color: #333;
+}
+footer .footerbtn div span{
+    display: block;
+    color: #7a3d8a;
+    font-size: 18px;
+}
+footer .footerbtn div{
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+    display: flex;
+    align-items: center;
+}
+.socialimgs{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.socialimgs img{
+    width: 25px;
+    height: 35px;
+    margin-right: 15px;
+}
+.footertext ul{
+    list-style:none ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.footertext ul li a{
+    text-decoration: none;
+    color: #b9b9b9;
+    margin:15px;
+}
+.footertext ul li a:hover{
+    color: #b219db;
+    border-bottom: none;
+}
+/* end footer */
+@media  (max-width:1200px) {
+    .divtext h3{
+        font-size: 45px;
+    }
+    .divtext p{
+        font-size: 22px;
+    }
+}
+@media (max-width:992) {
+    .divtext h3{
+        font-size: 35px;
+    }
+    .divtext p{
+        font-size: 18px;
+    }
+}
+@media (max-width:912px) {
+    nav ul li a{
+        font-size: 10px;
+    }
+}
+@media (max-width:762px) {
+    nav{
+        padding: 20px 50px 0;
+    }
+    nav ul li a{
+        margin: 0 5px;
+        font-size: 15px;
+    }
+}
+@media (max-width:576px) {
+    nav{
+        padding: 20px 10px 0;
+
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+    nav img{
+        width: 70px;
+    }
+}
